@@ -15,8 +15,8 @@ output = f"{tempFolder}\out_temp.wav" # file output (with name)
 
 noises_dir = os.path.join(scriptDir, r"Sound", r"catgirl")
 
-model_path = os.path.join(scriptDir, r"finetunes") # Fintuned model path
-config_path = os.path.join(scriptDir, r"finetunes", r"config.json") # Model configuration path file
+model_path = os.path.join(scriptDir, r"TTS_model") # Fintuned model path
+config_path = os.path.join(scriptDir, r"TTS_model", r"config.json") # Model configuration path file
 voice_reference = os.path.join(scriptDir, r"voices", r"catgirl", r"catgirl.wav") # Speaker reference (catgirl)
 
 noises_sounds = []
