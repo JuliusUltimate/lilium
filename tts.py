@@ -13,7 +13,7 @@ scriptDir = os.path.dirname(os.path.realpath(__file__)) # Script working dir
 tempFolder = os.path.join(scriptDir, r"temp_output") # Temp folder path (where the audio is stored before getting played)
 output = f"{tempFolder}\out_temp.wav" # file output (with name)
 
-noises_dir = os.path.join(scriptDir, r"predefined")
+noises_dir = os.path.join(scriptDir, r"Sound", r"catgirl")
 
 model_path = os.path.join(scriptDir, r"finetunes") # Fintuned model path
 config_path = os.path.join(scriptDir, r"finetunes", r"config.json") # Model configuration path file
@@ -26,7 +26,7 @@ for w in os.listdir(noises_dir):
     basedir = os.path.join(noises_dir, w) #Full path
     noises_sounds.append(basedir) # Adding to the list
 
-print(noises_sounds)
+# print(noises_sounds) (this was for debugging purposes)
 
 ##-----------------------------Main Function---------------------------------
 
