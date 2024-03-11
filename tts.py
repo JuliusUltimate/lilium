@@ -69,7 +69,9 @@ def speak(world):
                 tts = TTS(model_path=model_path, config_path=config_path) #gpu=False
                 tts.tts_to_file(uwu_text, file_path=f"{output}", language="en", speaker_wav=[voice_reference]) #for single / short sentences : split_sentences=False
 
-                player.play(sound) #skill issue tbh
+                player.play(output) # skill issue tbh
+                player.play(sound) # We end in beauty with a cute catgirl noise could add a stuff to trigger it like not always with random but idk
+                
 
             
 

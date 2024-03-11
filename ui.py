@@ -1,6 +1,6 @@
 
 import time
-import PySimpleGUI as sg
+import PySimpleGUI as sg # Bro switch to tkinter idk (+apprently it's paid... just HOW?)
 import random
 
 
